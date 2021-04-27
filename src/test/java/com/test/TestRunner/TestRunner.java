@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
                 "junit:target/cucumber_xml.xml",
                 "rerun:target/cucumber_rerun.txt",
         },
-        tags = {"@TestGmailLogin"})
+        tags = {"@EmailSending_GMAIL"})
 
 @RunWith(Cucumber.class)
 public class TestRunner {
