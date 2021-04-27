@@ -24,21 +24,24 @@ public class CommonPage extends TestBase {
         wait.until(ExpectedConditions.visibilityOf(nextButton));
         wait.until(ExpectedConditions.elementToBeClickable(nextButton));//Next Button
         nextButton.click();
+        Thread.sleep(5000);
 
 
         // Entering the Password and Click on Next Button
-        String ShowPassText = driver.findElement(By.xpath("//*[@id='selectionc0']")).getText();
-        Assert.assertEquals("Show password", ShowPassText);
+        WebElement ShowPassText = driver.findElement(By.xpath("//*[@id='selectionc0']"));
+        wait.until(ExpectedConditions.visibilityOf(ShowPassText));
+        String ShowPasswordText = ShowPassText.getText();
+        Assert.assertEquals("Show password", ShowPasswordText);
 
 
         WebElement password = driver.findElement(By.xpath("//*[@name='password']"));
         wait.until(ExpectedConditions.visibilityOf(password));
-        wait.until(ExpectedConditions.elementToBeClickable(password));
         password.sendKeys(Password);
 
-        wait.until(ExpectedConditions.visibilityOf(nextButton));
-        wait.until(ExpectedConditions.elementToBeClickable(nextButton));//Next Button
-        nextButton.click();
+        WebElement nextButton1 = driver.findElement(By.xpath("//*[@class='VfPpkd-RLmnJb']"));
+        wait.until(ExpectedConditions.visibilityOf(nextButton1));
+        wait.until(ExpectedConditions.elementToBeClickable(nextButton1));//Next Button
+        nextButton1.click();
         Thread.sleep(5000);
     }
 
