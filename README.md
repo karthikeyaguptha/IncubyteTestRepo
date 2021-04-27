@@ -21,4 +21,4 @@ After your Successful run, what you will get can be found below:
 2. ScreenShots (target/ScreenShots) -> Every successful screenshot will be stored
 3. Cucumber Reports (target/cucumber.html) -> Report will be overridden everytime after every successful run
 
-If any, Please feel free to write/call : Email: karthikgupta919@gmail.com
+If any, Please feel free write to - karthikgupta919@gmail.com
