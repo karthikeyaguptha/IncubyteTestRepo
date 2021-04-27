@@ -68,7 +68,7 @@ public class GmailLandingPage extends TestBase {
         BoM.sendKeys(BodyOfMail);
     }
 
-    public static void clickOnSendButton() {
+    public static void clickOnSendButton() throws InterruptedException {
         //Clicking on Send Button
 
         WebElement sendButton = driver.findElement(By.xpath("//*[@class='T-I J-J5-Ji aoO v7 T-I-atl L3']"));
@@ -76,6 +76,7 @@ public class GmailLandingPage extends TestBase {
         wait.until(ExpectedConditions.visibilityOf(sendButton));
         wait.until(ExpectedConditions.elementToBeClickable(sendButton));
         sendButton.click();
+        Thread.sleep(4500);
     }
 
 

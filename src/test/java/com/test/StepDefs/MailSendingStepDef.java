@@ -42,9 +42,9 @@ public class MailSendingStepDef extends TestBase {
     }
 
     @And("I Click On Send Button")
-    public void iClickOnSendButton() throws IOException {
+    public void iClickOnSendButton() throws IOException, InterruptedException {
         GmailLandingPage.clickOnSendButton();
-        ScreenShotUtil.TAKESIMPLESCRNSHT();
+        ScreenShotUtil.TAKESCRNSHT("FinalScreenShot_MailSending");
     }
 
     @Then("I close the Browser")
