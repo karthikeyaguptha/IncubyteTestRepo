@@ -2,6 +2,8 @@
 
   Feature: Gmail Mail Sending Test Script
 
+#Pre-Condition:
+# GmailAccount should be already created
 
     @EmailSending_GMAIL
     Scenario Outline: Gmail Mail Sending
